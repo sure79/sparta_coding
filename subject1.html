@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .front {
+            margin: auto;
+            width: 700px;
+
+        }
+
+        .space {
+            margin-top: 20px;
+        }
+
+        .custom-select {
+            width: 400px;
+        }
+
+        .form-control rounded-right {
+            width: 800px;
+        }
+        .btn{
+            display: block;
+            margin: auto;
+            
+        }
+        a{
+            margin-top: 20px;
+        }
+        .input-group{
+            margin-top: 20px;
+            width: 500px;
+        }
+        *{
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        
+    </style>
+    <script>
+        function hello() {
+            alert("주문되었습니다.")
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="front">
+        <img src="http://pimage.design.co.kr/cms/contents/direct/info_id/51712/1272990161161.jpg" />
+    
+        <div class="front">
+            <p>
+            <h1>요트팝니다.</h1>
+            <h5>가격 : 1억/개</h5>
+            </p>
+            이 요트를 사시면 당신의 생활이 업그레이드 됩니다.
+            가격이 비싸다면 활부해 드립니다.
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주문자이름</span>         
+                    <input type="text" class="form-control rounded-right" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">수량</span>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>수량을 선택해 주세요.</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>    
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">주소</span>         
+                    <input type="text" class="form-control rounded-right" required>
+                </div>
+            </div>    `
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">전화번호</span>         
+                    <input type="text" class="form-control rounded-right" required>
+                </div>
+            </div>   
+
+               <a onclick="hello()"> 
+                    <button type="submit" class="btn btn-primary my-1">주문하기</button>
+               </a>
+                
+                      
+            </div>
+        </div>
+     </div>   
+</body>
+
+</html>
